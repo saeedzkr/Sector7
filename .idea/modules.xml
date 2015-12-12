@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/WebConsole/SECTOR7-WEB-Console.iml" filepath="$PROJECT_DIR$/WebConsole/SECTOR7-WEB-Console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jobs/SERCTOR7-JOBS.iml" filepath="$PROJECT_DIR$/Jobs/SERCTOR7-JOBS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/SERCTOR7-Service-Console.iml" filepath="$PROJECT_DIR$/services/SERCTOR7-Service-Console.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sector7.iml" filepath="$PROJECT_DIR$/Sector7.iml" />
     </modules>
   </component>

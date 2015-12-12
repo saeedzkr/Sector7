@@ -1,6 +1,8 @@
 package org.console.bean;
 
-import javax.ejb.LocalBean;
+
+import org.service.UserService;
+
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -8,7 +10,7 @@ import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.Serializable;
-
+import org.apache.log4j.*;
 /**
  * Created by s.zakipour on 11/09/2015.
  */
@@ -17,6 +19,9 @@ import java.io.Serializable;
 public class LoginBean implements Serializable
 
 {
+
+    Logger logger = Logger.getLogger("log4j.category.callLogger");
+
     private String userName;
     private String password;
 
@@ -48,9 +53,10 @@ public class LoginBean implements Serializable
     }
 
     public String login() {
+        String msg = "sombody login with user : " + userName;
+        logger.log(Level.INFO, msg);
         //boolean result = UserDAO.login(uname, password);
-        if (userName.equals("saeed") && password.equals("zakipour"))
-        {
+        if (userName.equals("saeed") && password.equals("zakipour")) {
             // get Http Session and store username
             HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);
             session.setAttribute("username", userName);
@@ -59,6 +65,7 @@ public class LoginBean implements Serializable
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
             return "pages/main.xhtml";
 
         } else {
@@ -72,11 +79,18 @@ public class LoginBean implements Serializable
         }
     }
 
-    public String logout()
-    {
+    public String logout() {
+        String msg = " user : " + userName + " is loggout ";
+        logger.log(Level.INFO, msg);
         HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);
         session.invalidate();
         return "logout";
+    }
+
+    public String Control() {
+        UserService srv = new UserService();
+        return srv.getUsers("saeed");
+
     }
 
 

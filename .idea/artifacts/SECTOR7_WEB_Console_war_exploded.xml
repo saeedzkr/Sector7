@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SECTOR7-WEB-Console:war exploded">
+    <output-path>$PROJECT_DIR$/WebConsole/target/SECTOR7-WEB-Console-0.0.1</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SECTOR7-WEB-Console" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="SERCTOR7-Service-Console-0.0.1.jar">
+            <element id="module-output" name="SERCTOR7-Service-Console" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/WebConsole/target/SECTOR7-WEB-Console-0.0.1/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="SECTOR7-WEB-Console/web/Web" />
+    </root>
+  </artifact>
+</component>

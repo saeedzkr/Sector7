@@ -6,10 +6,10 @@
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>SERCTOR7-Service-Console</artifactId>
+    <artifactId>SERCTOR7-JOBS</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
-    <name>Services</name>
+    <name>Jobs</name>
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
@@ -31,12 +31,13 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
                 <!--<configuration>-->
-                    <!--<failOnMissingWebXml>false</failOnMissingWebXml>-->
+                <!--<failOnMissingWebXml>false</failOnMissingWebXml>-->
                 <!--</configuration>-->
             </plugin>
 
         </plugins>
 
     </build>
+
 
 </project>
