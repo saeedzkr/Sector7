@@ -67,5 +67,12 @@
         <servlet-name>ServiceHanlder</servlet-name>
         <url-pattern>/main.do</url-pattern>
     </servlet-mapping>
-
+    <filter>
+        <filter-name>SecurityFilter</filter-name>
+        <filter-class>org.console.Controller.SecurityFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SecurityFilter</filter-name>
+        <url-pattern>/*.xhtml</url-pattern>
+    </filter-mapping>
 </web-app>

@@ -20,7 +20,7 @@ public class LoginBean implements Serializable
 
 {
 
-    Logger logger = Logger.getLogger("log4j.category.callLogger");
+    Logger logger = Logger.getLogger("callLogger");
 
     private String userName;
     private String password;

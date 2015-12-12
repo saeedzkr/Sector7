@@ -19,6 +19,7 @@ public class UserService {
     @Path("/users")
     public String getUsers(@QueryParam("username") String user)
     {
+        System.out.println("hereeeeeeeeeeeeeeeeeee");
         logger.log(Level.INFO , "getuser");
         return "hello " + user;
     }

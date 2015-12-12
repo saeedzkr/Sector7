@@ -22,7 +22,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="SECTOR7-WEB-Console" />
       </profile>
       <profile default="false" name="Annotation profile for SERCTOR7-Service-Console" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -38,11 +37,20 @@
         <processorPath useClasspath="true" />
         <module name="SERCTOR7-JOBS" />
       </profile>
+      <profile default="false" name="Annotation profile for SERCTOR7-MODEL" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="SERCTOR7-MODEL" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SECTOR7" target="1.5" />
       <module name="Sector7" target="1.5" />
       <module name="SECTOR7-WEB-Console" target="1.7" />
       <module name="SERCTOR7-JOBS" target="1.7" />
+      <module name="SERCTOR7-MODEL" target="1.7" />
       <module name="SERCTOR7-Service-Console" target="1.7" />
     </bytecodeTargetLevel>
   </component>
