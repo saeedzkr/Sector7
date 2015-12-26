@@ -10,7 +10,9 @@ import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.Serializable;
+
 import org.apache.log4j.*;
+
 /**
  * Created by s.zakipour on 11/09/2015.
  */
@@ -53,11 +55,12 @@ public class LoginBean implements Serializable
     }
 
     public String login() {
-        String msg = "sombody login with user : " + userName;
+        String msg = "sombody login with user : " + userName + "and ip : " + FacesContext.getCurrentInstance().getExternalContext().getRemoteUser();
         logger.log(Level.INFO, msg);
         //boolean result = UserDAO.login(uname, password);
         if (userName.equals("saeed") && password.equals("zakipour")) {
             // get Http Session and store username
+
             HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);
             session.setAttribute("username", userName);
             try {
