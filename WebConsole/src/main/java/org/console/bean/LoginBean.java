@@ -1,6 +1,8 @@
 package org.console.bean;
 
 
+import org.model.dao.UserDAOImpl;
+import org.model.entity.User;
 import org.service.UserService;
 
 import javax.faces.application.FacesMessage;
@@ -10,8 +12,9 @@ import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.Serializable;
-
 import org.apache.log4j.*;
+
+
 
 /**
  * Created by s.zakipour on 11/09/2015.
@@ -55,10 +58,13 @@ public class LoginBean implements Serializable
     }
 
     public String login() {
+        org.model.dao.UserDAOImpl userDAO = new UserDAOImpl();
         String msg = "sombody login with user : " + userName + "and ip : " + FacesContext.getCurrentInstance().getExternalContext().getRemoteUser();
         logger.log(Level.INFO, msg);
         //boolean result = UserDAO.login(uname, password);
-        if (userName.equals("saeed") && password.equals("zakipour")) {
+        User user = userDAO.getUser(userName, password);
+//        if (userName.equals("saeed") && password.equals("zakipour")) {
+        if (user.getUserid()!=0) {
             // get Http Session and store username
 
             HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);
