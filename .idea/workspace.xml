@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da8188c9-2d1e-4570-b953-973f3cfe18ac" name="Default" comment="spring depndency added">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebConsole/src/main/java/org/console/Controller/SecurityFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebConsole/src/main/java/org/console/bean/LoginBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebConsole/src/main/java/org/console/bean/LoginDeviceBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebConsole/src/main/java/org/console/util/DateUtils.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/org/model/entity/Device.java" afterPath="$PROJECT_DIR$/model/src/main/java/org/model/entity/Device.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/org/model/dao/DeviceDAO.java" afterPath="$PROJECT_DIR$/model/src/main/java/org/model/dao/DeviceDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/org/model/dao/DeviceDAOImpl.java" afterPath="$PROJECT_DIR$/model/src/main/java/org/model/dao/DeviceDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/SECTOR7-WEB-Console.iml" afterPath="$PROJECT_DIR$/WebConsole/SECTOR7-WEB-Console.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SECTOR7.iml" afterPath="$PROJECT_DIR$/SECTOR7.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SECTOR7.ipr" afterPath="$PROJECT_DIR$/SECTOR7.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SECTOR7.iws" afterPath="$PROJECT_DIR$/SECTOR7.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SECTOR7_WEB_Console_SECTOR7_WEB_Console_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SECTOR7_WEB_Console_SECTOR7_WEB_Console_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SECTOR7_WEB_Console_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SECTOR7_WEB_Console_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobs/SERCTOR7-JOBS.iml" afterPath="$PROJECT_DIR$/Jobs/SERCTOR7-JOBS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/SERCTOR7-MODEL.iml" afterPath="$PROJECT_DIR$/model/SERCTOR7-MODEL.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/SERCTOR7-Service-Console.iml" afterPath="$PROJECT_DIR$/services/SERCTOR7-Service-Console.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/org/model/entity/User.java" afterPath="$PROJECT_DIR$/model/src/main/java/org/model/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="aeb87bff-4ba6-4192-8c45-c8daff24c31e" name="Rejected commit: Default" comment="spring depndency added" />
@@ -65,21 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45064378">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6016598">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,7 +151,7 @@
         <entry file="file://$PROJECT_DIR$/WebConsole/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -193,7 +179,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Jobs/pom.xml" />
-        <option value="$PROJECT_DIR$/WebConsole/pom.xml" />
         <option value="$PROJECT_DIR$/WebConsole/src/main/java/org/console/util/DateUtils.java" />
         <option value="$PROJECT_DIR$/services/src/main/java/org/service/AbstractService.java" />
         <option value="$PROJECT_DIR$/WebConsole/src/main/webapp/login.xhtml" />
@@ -211,8 +196,9 @@
         <option value="$PROJECT_DIR$/model/src/main/java/org/model/entity/Device.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/org/model/dao/DeviceDAO.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/org/model/dao/DeviceDAOImpl.java" />
-        <option value="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/WebConsole/src/main/java/org/console/bean/LoginDeviceBean.java" />
+        <option value="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/WebConsole/pom.xml" />
       </list>
     </option>
   </component>
@@ -1243,7 +1229,7 @@
       <workItem from="1449910438379" duration="1459000" />
       <workItem from="1451375109663" duration="1626000" />
       <workItem from="1451376829960" duration="3799000" />
-      <workItem from="1451413241983" duration="448000" />
+      <workItem from="1451413241983" duration="705000" />
     </task>
     <task id="LOCAL-00001" summary="spring depndency added">
       <created>1449915000893</created>
@@ -1255,18 +1241,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41929000" />
+    <option name="totallyTimeSpent" value="42186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1600" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34130147" sideWeight="0.494852" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34130147" sideWeight="0.494852" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1282,7 +1268,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32110682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32110682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1611,14 +1597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebConsole/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1701,14 +1679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebConsole/src/main/webapp/login.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1719,8 +1689,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45064378">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebConsole/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6016598">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
