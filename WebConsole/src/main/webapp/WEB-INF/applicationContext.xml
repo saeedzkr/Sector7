@@ -7,10 +7,10 @@
 
 
     <bean id="DeviceDAO" class="org.model.dao.DeviceDAOImpl"/>
-    <bean id="LoginDeviceBean" class="org.sector7.web.bean.Lo">
-        <property name="DeviceDAO" ref="DeviceDAO"/>
+    <!--<bean id="LoginDeviceBean" class="org.sector7.web.bean.">-->
+        <!--<property name="DeviceDAO" ref="DeviceDAO"/>-->
 
-    </bean>
+    <!--</bean>-->
 
 
     <!-- -->
