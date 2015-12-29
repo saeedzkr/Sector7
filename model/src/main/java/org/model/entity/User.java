@@ -30,6 +30,16 @@ public class User implements Serializable {
     @Column(name = "PASSWORD", length = 150)
     private String password;
 
+    @Column(name = "DEVICE_NAME", length = 150)
+    private String deviceName;
+    @Column(name = "DEVICE_IP", length = 150)
+    private String deviceIP;
+    @Column(name = "DEVICE_KEY", length = 500)
+    private String deviceKey;
+    @Column(name = "DEVICE_PHONE_NUMBER", length = 20)
+    private String phoneNumber;
+
+
 
     public User() {
     }
@@ -79,5 +89,37 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
+    }
+
+    public String getDeviceIP() {
+        return deviceIP;
+    }
+
+    public void setDeviceIP(String deviceIP) {
+        this.deviceIP = deviceIP;
+    }
+
+    public String getDeviceKey() {
+        return deviceKey;
+    }
+
+    public void setDeviceKey(String deviceKey) {
+        this.deviceKey = deviceKey;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

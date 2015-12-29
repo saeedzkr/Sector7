@@ -24,9 +24,34 @@
           <element id="file-copy" path="$MAVEN_REPOSITORY$/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/com/sun/faces/jsf-api/2.2.10/jsf-api-2.2.10.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/com/sun/el/el-ri/1.0/el-ri-1.0.jar" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar" />
+          <element id="archive" name="SERCTOR7-MODEL-0.0.1.jar">
+            <element id="module-output" name="SERCTOR7-MODEL" />
+          </element>
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.Final/hibernate-entitymanager-4.3.10.Final.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/4.3.1.Final/hibernate-validator-4.3.1.Final.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/asm/asm/3.1/asm-3.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz-jboss/2.1.7/quartz-jboss-2.1.7.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.1.7/quartz-2.1.7.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.6.RELEASE/spring-aop-4.1.6.RELEASE.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" />
@@ -34,17 +59,9 @@
           <element id="file-copy" path="$MAVEN_REPOSITORY$/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" />
           <element id="file-copy" path="$MAVEN_REPOSITORY$/org/springframework/spring-expression/4.1.6.RELEASE/spring-expression-4.1.6.RELEASE.jar" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" />
           <element id="archive" name="SERCTOR7-Service-Console-0.0.1.jar">
             <element id="module-output" name="SERCTOR7-Service-Console" />
           </element>
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/asm/asm/3.1/asm-3.1.jar" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz-jboss/2.1.7/quartz-jboss-2.1.7.jar" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.1.7/quartz-2.1.7.jar" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.jar" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar" />
         </element>
       </element>
     </root>
