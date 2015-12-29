@@ -2,9 +2,10 @@ package org.sector7.web.bean;
 
 import org.apache.log4j.Logger;
 import org.sector7.model.dao.DeviceDAOImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.annotation.ManagedBean;
-import javax.enterprise.context.SessionScoped;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 import java.io.Serializable;
 
 /**
@@ -24,6 +25,8 @@ public class LoginDeviceBean implements Serializable
     private String deviceKey;
     private String phoneNumber;
     private long userID;
+
+    @Autowired
     private DeviceDAOImpl deviceDAO;
 
 
