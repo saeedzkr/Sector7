@@ -1,4 +1,4 @@
-package org.console.util;
+package org.sector7.web.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

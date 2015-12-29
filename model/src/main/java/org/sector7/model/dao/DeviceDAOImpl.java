@@ -1,9 +1,9 @@
-package org.model.dao;
+package org.sector7.model.dao;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.Priority;
-import org.model.entity.Device;
+import org.sector7.model.entity.Device;
 
 /**
  * Created by sector7 on 12/29/15.

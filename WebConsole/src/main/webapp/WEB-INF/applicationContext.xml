@@ -6,11 +6,11 @@
         http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 
-    <bean id="DeviceDAO" class="org.model.dao.DeviceDAOImpl"/>
-    <!--<bean id="LoginDeviceBean" class="org.sector7.web.bean.">-->
-        <!--<property name="DeviceDAO" ref="DeviceDAO"/>-->
+    <bean id="DeviceDAO" class="org.sector7.model.dao.DeviceDAOImpl"/>
+    <bean id="LoginDeviceBean" class="org.sector7.web.bean.LoginDeviceBean">
+        <property name="DeviceDAO" ref="DeviceDAO"/>
 
-    <!--</bean>-->
+    </bean>
 
 
     <!-- -->

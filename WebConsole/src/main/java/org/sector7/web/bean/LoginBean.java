@@ -1,9 +1,9 @@
-package org.console.bean;
+package org.sector7.web.bean;
 
 
-import org.model.dao.UserDAOImpl;
-import org.model.entity.User;
-import org.service.UserService;
+import org.sector7.model.dao.UserDAOImpl;
+import org.sector7.model.entity.User;
+import org.sector7.services.service.UserService;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -58,7 +58,7 @@ public class LoginBean implements Serializable
     }
 
     public String login() {
-        org.model.dao.UserDAOImpl userDAO = new UserDAOImpl();
+        org.sector7.model.dao.UserDAOImpl userDAO = new UserDAOImpl();
         String msg = "sombody login with user : " + userName + "and ip : " + FacesContext.getCurrentInstance().getExternalContext().getRemoteUser();
         logger.log(Level.INFO, msg);
         //boolean result = UserDAO.login(uname, password);

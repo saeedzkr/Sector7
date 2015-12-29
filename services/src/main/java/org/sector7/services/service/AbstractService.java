@@ -1,4 +1,4 @@
-package org.service;
+package org.sector7.services.service;
 
 import org.apache.log4j.Logger;
 

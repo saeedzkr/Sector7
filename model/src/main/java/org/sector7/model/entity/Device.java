@@ -1,4 +1,4 @@
-package org.model.entity;
+package org.sector7.model.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;

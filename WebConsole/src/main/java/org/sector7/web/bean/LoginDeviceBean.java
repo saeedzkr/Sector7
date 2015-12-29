@@ -1,7 +1,7 @@
-package org.console.bean;
+package org.sector7.web.bean;
 
 import org.apache.log4j.Logger;
-import org.model.dao.DeviceDAOImpl;
+import org.sector7.model.dao.DeviceDAOImpl;
 
 import javax.annotation.ManagedBean;
 import javax.enterprise.context.SessionScoped;

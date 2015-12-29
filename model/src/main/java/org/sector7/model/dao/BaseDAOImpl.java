@@ -1,4 +1,4 @@
-package org.model.dao;
+package org.sector7.model.dao;
 
 /**
  * Created by s.zakipour on 12/27/2015.

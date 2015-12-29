@@ -1,7 +1,7 @@
-package org.model.dao;
+package org.sector7.model.dao;
 
-import org.model.entity.Device;
-import org.model.entity.User;
+
+import org.sector7.model.entity.Device;
 
 /**
  * Created by sector7 on 12/29/15.

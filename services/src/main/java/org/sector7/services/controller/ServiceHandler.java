@@ -1,4 +1,4 @@
-package org.controller;
+package org.sector7.services.controller;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

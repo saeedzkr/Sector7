@@ -1,6 +1,6 @@
-package org.model.dao;
+package org.sector7.model.dao;
 
-import org.model.entity.User;
+import org.sector7.model.entity.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

@@ -1,9 +1,9 @@
-package org.service;
+package org.sector7.services.service;
 
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.entity.Credit;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -34,18 +34,18 @@ public class UserService {
         return Response.status(200).entity(output).build();
     }
         //todo ok
-    @GET
-    @Path("/remain")
-    @Produces(MediaType.APPLICATION_JSON)
-    public org.entity.Credit remain(@QueryParam("username") String user ,@QueryParam("password") String password)
-
-    {
-        logger.log(Level.INFO , "remain");
-        Credit credit = new Credit("saeed" , "fatoldsun" , 100 );
-//        String output = "Prameter1: " + user + "\nParameter2: " + password;
-//        return Response.status(200).entity(output).build();
-
-        return credit;
-    }
+//    @GET
+//    @Path("/remain")
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public org.entity.Credit remain(@QueryParam("username") String user ,@QueryParam("password") String password)
+//
+//    {
+//        logger.log(Level.INFO , "remain");
+//        Credit credit = new Credit("saeed" , "fatoldsun" , 100 );
+////        String output = "Prameter1: " + user + "\nParameter2: " + password;
+////        return Response.status(200).entity(output).build();
+//
+//        return credit;
+//    }
 
 }

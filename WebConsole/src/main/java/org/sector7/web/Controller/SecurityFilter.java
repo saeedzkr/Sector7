@@ -1,4 +1,4 @@
-package org.console.Controller;
+package org.sector7.web.Controller;
 
 
 import javax.servlet.*;

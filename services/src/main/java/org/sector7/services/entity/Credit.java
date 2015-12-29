@@ -1,4 +1,4 @@
-package org.entity;
+package org.sector7.services.entity;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
