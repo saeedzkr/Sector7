@@ -32,7 +32,7 @@ public class LoginDeviceBean implements Serializable {
     private String phoneNumber;
     private long userID;
 
-    @Autowired
+
     private DeviceDAOImpl deviceDAOImpl;
 
 

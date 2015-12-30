@@ -8,6 +8,10 @@
          version="3.0">
 
 
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
     <display-name>Sector7 Porject</display-name>
 
 
@@ -15,11 +19,7 @@
         <welcome-file>login.xhtml</welcome-file>
     </welcome-file-list>
 
-    <listener>
-        <listener-class>
-            org.springframework.web.context.ContextLoaderListener
-        </listener-class>
-    </listener>
+
 
 
     <servlet>
