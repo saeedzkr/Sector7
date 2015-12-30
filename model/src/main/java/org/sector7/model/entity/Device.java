@@ -10,8 +10,8 @@ import java.io.Serializable;
 @Entity
 @Table(name = "tbl_Device")
 @NamedQueries({
-        @NamedQuery(name = "User.findAll", query = "SELECT t FROM User t"),
-        @NamedQuery(name = "User.findByUserAndPass", query = "SELECT t FROM User t WHERE t.username = :username AND t.password = :password ")
+        @NamedQuery(name = "Device.findAll", query = "SELECT t FROM Device t"),
+        @NamedQuery(name = "Device.findByUserAndPass", query = "SELECT t FROM Device t WHERE t.username = :username AND t.password = :password ")
 
 })
 public class Device implements Serializable {

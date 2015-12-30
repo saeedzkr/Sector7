@@ -7,18 +7,18 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
 
-    <!--this ?-->
-    <resource-ref>
-        <res-ref-name>jdbc/myDS</res-ref-name>
-        <res-type>javax.sql.DataSource</res-type>
-        <res-auth>Container</res-auth>
-    </resource-ref>
+    <!--&lt;!&ndash;this ?&ndash;&gt;-->
+    <!--<resource-ref>-->
+        <!--<res-ref-name>jdbc/myDS</res-ref-name>-->
+        <!--<res-type>javax.sql.DataSource</res-type>-->
+        <!--<res-auth>Container</res-auth>-->
+    <!--</resource-ref>-->
 
-    <!--and that ? -->
-    <persistence-context-ref>
-        <persistence-context-ref-name>jpa/Myconnection</persistence-context-ref-name>
-        <persistence-unit-name>Myconnection</persistence-unit-name>
-    </persistence-context-ref>
+    <!--&lt;!&ndash;and that ? &ndash;&gt;-->
+    <!--<persistence-context-ref>-->
+        <!--<persistence-context-ref-name>jpa/Myconnection</persistence-context-ref-name>-->
+        <!--<persistence-unit-name>Myconnection</persistence-unit-name>-->
+    <!--</persistence-context-ref>-->
 
 
     <display-name>Service-Console</display-name>
