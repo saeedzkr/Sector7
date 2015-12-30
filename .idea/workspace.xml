@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da8188c9-2d1e-4570-b953-973f3cfe18ac" name="Default" comment="spring depndency added">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_1_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_jboss_2_1_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/src/main/java/org/sector7/web/bean/LoginDeviceBean.java" afterPath="$PROJECT_DIR$/WebConsole/src/main/java/org/sector7/web/bean/LoginDeviceBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/SECTOR7-WEB-Console.iml" afterPath="$PROJECT_DIR$/WebConsole/SECTOR7-WEB-Console.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SECTOR7.iml" afterPath="$PROJECT_DIR$/SECTOR7.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="da8188c9-2d1e-4570-b953-973f3cfe18ac" name="Default" comment="spring depndency added" />
     <list id="aeb87bff-4ba6-4192-8c45-c8daff24c31e" name="Rejected commit: Default" comment="spring depndency added" />
     <ignored path="Sector7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1059,7 +1048,7 @@
       <workItem from="1451413241983" duration="4014000" />
       <workItem from="1451486946503" duration="6654000" />
       <workItem from="1451497620213" duration="181000" />
-      <workItem from="1451497831242" duration="2611000" />
+      <workItem from="1451497831242" duration="2638000" />
     </task>
     <task id="LOCAL-00001" summary="spring depndency added">
       <created>1449915000893</created>
@@ -1071,7 +1060,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54941000" />
+    <option name="totallyTimeSpent" value="54968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1600" height="904" extended-state="6" />

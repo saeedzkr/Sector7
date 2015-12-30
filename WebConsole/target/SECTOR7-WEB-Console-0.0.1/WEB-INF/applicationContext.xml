@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+<bean id="deviceDAOImpl" class="org.sector7.model.dao.DeviceDAOImpl"/>
+<bean id="loginDeviceBean" class="org.sector7.web.bean.LoginDeviceBean" >
+<property name="deviceDAOImpl" ref="deviceDAOImpl" />
+</bean>
+
+
+<!-- -->
+<!--<bean id="customerDAO" class="org.RayanEN.model.dao.Customer.CustomerDAOImpl"/>-->
+<!--<bean id="cstsrv" class="org.RayanEN.model.service.Customer.CustomerJAXWSImpl">-->
+<!--<property name="customerDAO" ref="customerDAO"/>-->
+<!--</bean>-->
+
+
+<!--<bean id="customerRESTImpl" class="org.RayanEN.model.service.Customer.CustomerRESTImpl">-->
+<!--<property name="customerDAO" ref="customerDAO"/>-->
+<!--</bean>-->
+
+
+<!--<ws:service id="cstsrv" impl="org.RayanEN.model.service.Customer.CustomerJAXWSImpl"   />-->
+
+<!--<wss:binding url="/CustomerService" service="cstsrv" />-->
+
+
+</beans>
