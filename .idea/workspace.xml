@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da8188c9-2d1e-4570-b953-973f3cfe18ac" name="Default" comment="spring depndency added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/faces-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/org/sector7/model/dao/DeviceDAO.java" afterPath="$PROJECT_DIR$/model/src/main/java/org/sector7/model/dao/DeviceDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/org/sector7/model/dao/DeviceDAOImpl.java" afterPath="$PROJECT_DIR$/model/src/main/java/org/sector7/model/dao/DeviceDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/src/main/webapp/pages/DeviceInfo.xhtml" afterPath="$PROJECT_DIR$/WebConsole/src/main/webapp/pages/DeviceInfo.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/src/main/java/org/sector7/web/bean/LoginDeviceBean.java" afterPath="$PROJECT_DIR$/WebConsole/src/main/java/org/sector7/web/bean/LoginDeviceBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/src/main/webapp/login.xhtml" afterPath="$PROJECT_DIR$/WebConsole/src/main/webapp/login.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="da8188c9-2d1e-4570-b953-973f3cfe18ac" name="Default" comment="spring depndency added" />
     <list id="aeb87bff-4ba6-4192-8c45-c8daff24c31e" name="Rejected commit: Default" comment="spring depndency added" />
     <ignored path="Sector7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1258,7 +1248,7 @@
       <workItem from="1451486946503" duration="6654000" />
       <workItem from="1451497620213" duration="181000" />
       <workItem from="1451497831242" duration="2748000" />
-      <workItem from="1451500594983" duration="7565000" />
+      <workItem from="1451500594983" duration="7593000" />
     </task>
     <task id="LOCAL-00001" summary="spring depndency added">
       <created>1449915000893</created>
@@ -1270,7 +1260,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62643000" />
+    <option name="totallyTimeSpent" value="62671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1600" height="876" extended-state="6" />
