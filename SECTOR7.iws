@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc9822a9-cb85-442a-8df0-03954df0fcef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/org/sector7/model/dao/BaseDAOImpl.java" afterPath="$PROJECT_DIR$/model/src/main/java/org/sector7/model/dao/BaseDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/org/sector7/model/entity/Device.java" afterPath="$PROJECT_DIR$/model/src/main/java/org/sector7/model/entity/Device.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/SECTOR7-WEB-Console.iml" afterPath="$PROJECT_DIR$/WebConsole/SECTOR7-WEB-Console.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SECTOR7.iml" afterPath="$PROJECT_DIR$/SECTOR7.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SECTOR7.ipr" afterPath="$PROJECT_DIR$/SECTOR7.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SECTOR7.iws" afterPath="$PROJECT_DIR$/SECTOR7.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/SERCTOR7-MODEL.iml" afterPath="$PROJECT_DIR$/model/SERCTOR7-MODEL.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/org/sector7/model/dao/UserDAOImpl.java" afterPath="$PROJECT_DIR$/model/src/main/java/org/sector7/model/dao/UserDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebConsole/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projectFilesBackup/WebConsole/SECTOR7-WEB-Console.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projectFilesBackup/SECTOR7.ipr" />
     </list>
     <ignored path="SECTOR7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1380,7 +1373,7 @@
       <workItem from="1451229195536" duration="189000" />
       <workItem from="1451229413978" duration="190000" />
       <workItem from="1451229631266" duration="3438000" />
-      <workItem from="1451469329368" duration="2281000" />
+      <workItem from="1451469329368" duration="2365000" />
     </task>
     <task id="LOCAL-00001" summary="pom model change">
       <created>1451229721158</created>
@@ -1398,7 +1391,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9905000" />
+    <option name="totallyTimeSpent" value="9989000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
