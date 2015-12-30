@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 /**
  * Created by s.zakipour on 12/27/2015.
  */
-public class UserDAOImpl extends BaseDAOImpl<User>
+public class UserDAOImpl
 {
     private static final EntityManagerFactory entityManagerFactory;
     static{
