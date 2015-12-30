@@ -8,12 +8,19 @@
          version="3.0">
 
 
-    <display-name>Service-Console</display-name>
+    <display-name>Sector7 Porject</display-name>
 
 
     <welcome-file-list>
         <welcome-file>login.xhtml</welcome-file>
     </welcome-file-list>
+
+    <listener>
+        <listener-class>
+            org.springframework.web.context.ContextLoaderListener
+        </listener-class>
+    </listener>
+
 
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>

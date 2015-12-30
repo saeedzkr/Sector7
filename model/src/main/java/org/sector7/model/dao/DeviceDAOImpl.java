@@ -8,8 +8,12 @@ import org.sector7.model.entity.Device;
 /**
  * Created by sector7 on 12/29/15.
  */
+
 public class DeviceDAOImpl implements DeviceDAO {
 
+    public DeviceDAOImpl() {
+        System.out.println("------------------------------" + this.getClass().getName());
+    }
 
     Logger logger = Logger.getLogger("callLogger");
 

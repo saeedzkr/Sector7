@@ -1,11 +1,18 @@
 package org.sector7.web.bean;
 
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.sector7.model.dao.DeviceDAOImpl;
+import org.sector7.model.entity.Device;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpSession;
 import java.io.Serializable;
 
 /**
@@ -13,8 +20,7 @@ import java.io.Serializable;
  */
 @ManagedBean
 @SessionScoped
-public class LoginDeviceBean implements Serializable
-{
+public class LoginDeviceBean implements Serializable {
     Logger logger = Logger.getLogger("callLogger");
 
 
@@ -27,7 +33,7 @@ public class LoginDeviceBean implements Serializable
     private long userID;
 
     @Autowired
-    private DeviceDAOImpl deviceDAO;
+    private DeviceDAOImpl deviceDAOImpl;
 
 
     public LoginDeviceBean() {
@@ -97,17 +103,44 @@ public class LoginDeviceBean implements Serializable
         this.userID = userID;
     }
 
-    public void loginDevice()
-    {
 
+
+
+    public String loginDevice() {
+        try {
+
+            System.out.println("====================================");
+            Device device = getDeviceDAOImpl().validateDevice();
+            System.out.println("====================================");
+            if (device != null) {
+
+                ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
+                String msg = "device name = " + device.getDeviceName() + "is log in";
+                HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(true);
+                session.setAttribute("device", session);
+
+                logger.log(Level.INFO, msg);
+                return ("pages/DeviceInfo.xhtml");
+            } else {
+                return "login.xhtml";
+            }
+        } catch (Exception ex) {
+            FacesMessage message = new FacesMessage(" Login error is = " + ex.getMessage());
+            FacesContext.getCurrentInstance().addMessage("loginButton", message);
+            //loginButton
+            ex.printStackTrace();
+            logger.log(Level.ERROR, ex.getMessage());
+            return "login.xhtml";
+        }
 
     }
 
-    public void setDeviceDAO(DeviceDAOImpl DeviceDAO) {
-        deviceDAO = DeviceDAO;
+
+    public void setDeviceDAOImpl(DeviceDAOImpl deviceDAOImpl) {
+        this.deviceDAOImpl = deviceDAOImpl;
     }
 
-    public DeviceDAOImpl getDeviceDAO() {
-        return deviceDAO;
+    public DeviceDAOImpl getDeviceDAOImpl() {
+        return deviceDAOImpl;
     }
 }
