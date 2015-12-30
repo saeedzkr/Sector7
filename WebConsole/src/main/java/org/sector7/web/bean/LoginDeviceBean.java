@@ -5,13 +5,17 @@ import org.apache.log4j.Logger;
 import org.sector7.model.dao.DeviceDAOImpl;
 import org.sector7.model.entity.Device;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
 
+import javax.faces.bean.ManagedProperty;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
+import javax.inject.Inject;
 import javax.servlet.http.HttpSession;
 import java.io.Serializable;
 
@@ -35,9 +39,14 @@ public class LoginDeviceBean implements Serializable {
 
     private DeviceDAOImpl deviceDAOImpl;
 
-
-    public LoginDeviceBean() {
+    public void setDeviceDAOImpl(DeviceDAOImpl deviceDAOImpl) {
+        this.deviceDAOImpl = deviceDAOImpl;
     }
+
+    public DeviceDAOImpl getDeviceDAOImpl() {
+        return deviceDAOImpl;
+    }
+
 
     public Logger getLogger() {
         return logger;
@@ -104,43 +113,40 @@ public class LoginDeviceBean implements Serializable {
     }
 
 
-
-
     public String loginDevice() {
-        try {
+//        try {
 
-            System.out.println("====================================");
-            Device device = getDeviceDAOImpl().validateDevice();
-            System.out.println("====================================");
-            if (device != null) {
+        System.out.println("====================================");
+        Device device = getDeviceDAOImpl().validateDevice();
+        System.out.println("====================================");
+        if (device != null) {
 
-                ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
-                String msg = "device name = " + device.getDeviceName() + "is log in";
-                HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(true);
-                session.setAttribute("device", session);
+            this.userName = device.getUsername();
+            this.password = device.getPassword();
+            this.deviceName = device.getDeviceName();
+            this.deviceIP = device.getDeviceIP();
+            this.deviceKey = device.getDeviceKey();
 
-                logger.log(Level.INFO, msg);
-                return ("pages/DeviceInfo.xhtml");
-            } else {
-                return "login.xhtml";
-            }
-        } catch (Exception ex) {
-            FacesMessage message = new FacesMessage(" Login error is = " + ex.getMessage());
-            FacesContext.getCurrentInstance().addMessage("loginButton", message);
-            //loginButton
-            ex.printStackTrace();
-            logger.log(Level.ERROR, ex.getMessage());
+            ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
+            String msg = "device name = " + device.getDeviceName() + "is log in";
+            HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(true);
+            session.setAttribute("device", session);
+
+            logger.log(Level.INFO, msg);
+            return ("pages/DeviceInfo.xhtml");
+        } else {
             return "login.xhtml";
         }
+//        } catch (Exception ex) {
+//            FacesMessage message = new FacesMessage(" Login error is = " + ex.getMessage());
+//            FacesContext.getCurrentInstance().addMessage("loginButton", message);
+//            //loginButton
+//            ex.printStackTrace();
+//            logger.log(Level.ERROR, ex.getMessage());
+//            return "login.xhtml";
+//        }
 
     }
 
 
-    public void setDeviceDAOImpl(DeviceDAOImpl deviceDAOImpl) {
-        this.deviceDAOImpl = deviceDAOImpl;
-    }
-
-    public DeviceDAOImpl getDeviceDAOImpl() {
-        return deviceDAOImpl;
-    }
 }

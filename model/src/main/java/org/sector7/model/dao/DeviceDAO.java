@@ -8,9 +8,6 @@ import org.sector7.model.entity.Device;
  */
 public interface DeviceDAO {
 
-
-
-
     public Device validateDevice();
 
 }
