@@ -129,7 +129,7 @@ public class LoginDeviceBean implements Serializable {
 
             ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
             String msg = "device name = " + device.getDeviceName() + "is log in";
-            HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(true);
+            HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);
             session.setAttribute("device", session);
 
             logger.log(Level.INFO, msg);
