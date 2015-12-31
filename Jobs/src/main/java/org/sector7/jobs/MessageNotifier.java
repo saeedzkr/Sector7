@@ -11,7 +11,7 @@ import org.quartz.JobExecutionException;
  */
 public class MessageNotifier implements Job {
 
-    final Logger logger = Logger.getLogger("Job");
+    final Logger logger = Logger.getLogger("JobLogger");
 
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException

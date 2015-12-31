@@ -38,6 +38,7 @@ public class LoginDeviceBean implements Serializable {
     private long userID;
 
 
+
     private DeviceDAOImpl deviceDAOImpl;
 
     public void setDeviceDAOImpl(DeviceDAOImpl deviceDAOImpl) {
