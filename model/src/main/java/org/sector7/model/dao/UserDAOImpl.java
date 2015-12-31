@@ -1,5 +1,6 @@
 package org.sector7.model.dao;
 
+import org.apache.log4j.Logger;
 import org.sector7.model.entity.User;
 
 import javax.persistence.EntityManager;
@@ -9,8 +10,11 @@ import javax.persistence.Persistence;
 /**
  * Created by s.zakipour on 12/27/2015.
  */
-public class UserDAOImpl
+public class UserDAOImpl extends BaseDAOImpl
+
 {
+
+
     private static final EntityManagerFactory entityManagerFactory;
     static{
         entityManagerFactory  = Persistence.createEntityManagerFactory("MyConnection");

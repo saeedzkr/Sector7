@@ -25,7 +25,8 @@ import java.io.Serializable;
 @ManagedBean
 @SessionScoped
 public class LoginDeviceBean implements Serializable {
-    Logger logger = Logger.getLogger("callLogger");
+
+    final Logger logger = Logger.getLogger("callLogger");
 
 
     private String userName;
@@ -48,13 +49,7 @@ public class LoginDeviceBean implements Serializable {
     }
 
 
-    public Logger getLogger() {
-        return logger;
-    }
 
-    public void setLogger(Logger logger) {
-        this.logger = logger;
-    }
 
     public String getUserName() {
         return userName;

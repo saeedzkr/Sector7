@@ -20,7 +20,7 @@ import java.io.IOException;
 public class SecurityFilter implements Filter {
 
 
-    Logger logger = Logger.getLogger("callLogger");
+    final Logger logger = Logger.getLogger("callLogger");
 
 
     @Override

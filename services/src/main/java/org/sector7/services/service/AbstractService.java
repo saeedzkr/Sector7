@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
  */
 public abstract class AbstractService {
 
-    Logger logger = Logger.getLogger("ServiceLogger");
+    final Logger logger = Logger.getLogger("ServiceLogger");
 
     public AbstractService()
     {

@@ -16,7 +16,7 @@ import javax.transaction.Transactional;
 @Transactional
 public class DeviceDAOImpl implements DeviceDAO {
 
-    Logger logger = Logger.getLogger("callLogger");
+    final Logger logger = Logger.getLogger("callLogger");
 
     public DeviceDAOImpl() {
 

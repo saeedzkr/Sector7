@@ -4,11 +4,15 @@ package org.sector7.model.dao;
  * Created by s.zakipour on 12/27/2015.
  */
 
+import org.apache.log4j.Logger;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 
 public class BaseDAOImpl<T> {
+
+
 
 ////    @PersistenceContext(unitName = "Myconnection")
 ////    protected EntityManager em;
