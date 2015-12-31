@@ -39,22 +39,13 @@ public class SecurityFilter implements Filter {
 
         Device device = (Device) session.getAttribute("device");
         String uri = req.getRequestURI();
-        if (device == null && !(uri.endsWith("html") || uri.endsWith("LoginServlet") || uri.endsWith("xhtml")) && cotnrolIpAddress()) {
+        if (device == null || !(uri.endsWith("html") || uri.endsWith("LoginServlet") || uri.endsWith("xhtml")) && cotnrolIpAddress()) {
             logger.log(Level.WARN, "Unauthorized access request");
-            res.sendRedirect("login.xhtml");
+            req.getRequestDispatcher("/login.xhtml").forward(req, res);
+
         } else {
-            if (device != null && device.getDeviceKey().isEmpty()) {
-                filterChain.doFilter(servletRequest, servletResponse);
-
-
-                logger.log(Level.INFO, "Requested Resource::" + uri);
-
-            } else {
-
-                logger.log(Level.INFO, "request Authorized");
-                // pass the request along the filter chain
-                filterChain.doFilter(req, res);
-            }
+            logger.log(Level.INFO, "Authorized Request Resource :" + uri);
+            filterChain.doFilter(req, res);
 
         }
     }
