@@ -12,7 +12,7 @@ import javax.ws.rs.core.Response;
 @Path("/UserService")
 public class UserService {
 
-    Logger logger = Logger.getLogger("ServiceLogger");
+    final Logger logger = Logger.getLogger("ServiceLogger");
 
 
     @GET

@@ -8,12 +8,28 @@
          version="3.0">
 
 
-    <display-name>Service-Console</display-name>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>
+            org.quartz.ee.servlet.QuartzInitializerListener
+        </listener-class>
+
+    </listener>
+    <listener>
+        <listener-class>
+            org.springframework.web.context.request.RequestContextListener
+        </listener-class>
+    </listener>
+
+    <display-name>Sector7 Porject</display-name>
 
 
     <welcome-file-list>
         <welcome-file>login.xhtml</welcome-file>
     </welcome-file-list>
+
 
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
@@ -38,6 +54,16 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
+
+    <context-param>
+        <param-name>primefaces.PRIVATE_CAPTCHA_KEY</param-name>
+        <param-value>6LdmPhQTAAAAAJgIO3I7rWWaBLvlz3ASWsvPbdfn</param-value>
+
+    </context-param>
+    <context-param>
+        <param-name>primefaces.PUBLIC_CAPTCHA_KEY</param-name>
+        <param-value>6LdmPhQTAAAAAJNpnNwy7FBMY22f-9bpgGhgrRv4</param-value>
+    </context-param>
 
     <servlet>
         <servlet-name>Jersey RESTful Application</servlet-name>
@@ -68,12 +94,16 @@
         <servlet-name>ServiceHanlder</servlet-name>
         <url-pattern>/main.do</url-pattern>
     </servlet-mapping>
-    <!--<filter>-->
-        <!--<filter-name>SecurityFilter</filter-name>-->
-        <!--<filter-class>org.console.Controller.SecurityFilter</filter-class>-->
-    <!--</filter>-->
-    <!--<filter-mapping>-->
-        <!--<filter-name>SecurityFilter</filter-name>-->
-        <!--<url-pattern>/*.xhtml</url-pattern>-->
-    <!--</filter-mapping>-->
+    <filter>
+        <filter-name>SecurityFilter</filter-name>
+        <filter-class>org.sector7.web.Controller.SecurityFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SecurityFilter</filter-name>
+        <url-pattern>/pages/*</url-pattern>
+    </filter-mapping>
+    <session-config>
+
+        <session-timeout>5</session-timeout>
+    </session-config>
 </web-app>

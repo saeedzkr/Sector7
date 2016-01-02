@@ -1,10 +1,22 @@
 package org.sector7.web.bean;
 
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.sector7.model.dao.DeviceDAOImpl;
+import org.sector7.model.entity.Device;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
-import javax.annotation.ManagedBean;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedBean;
+
+import javax.faces.bean.ManagedProperty;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
+import javax.inject.Inject;
+import javax.servlet.http.HttpSession;
 import java.io.Serializable;
 
 /**
@@ -12,9 +24,9 @@ import java.io.Serializable;
  */
 @ManagedBean
 @SessionScoped
-public class LoginDeviceBean implements Serializable
-{
-    Logger logger = Logger.getLogger("callLogger");
+public class LoginDeviceBean implements Serializable {
+
+    final Logger logger = Logger.getLogger("callLogger");
 
 
     private String userName;
@@ -24,19 +36,21 @@ public class LoginDeviceBean implements Serializable
     private String deviceKey;
     private String phoneNumber;
     private long userID;
-    private DeviceDAOImpl deviceDAO;
 
 
-    public LoginDeviceBean() {
+
+    private DeviceDAOImpl deviceDAOImpl;
+
+    public void setDeviceDAOImpl(DeviceDAOImpl deviceDAOImpl) {
+        this.deviceDAOImpl = deviceDAOImpl;
     }
 
-    public Logger getLogger() {
-        return logger;
+    public DeviceDAOImpl getDeviceDAOImpl() {
+        return deviceDAOImpl;
     }
 
-    public void setLogger(Logger logger) {
-        this.logger = logger;
-    }
+
+
 
     public String getUserName() {
         return userName;
@@ -94,17 +108,41 @@ public class LoginDeviceBean implements Serializable
         this.userID = userID;
     }
 
-    public void loginDevice()
-    {
 
+    public String loginDevice() {
+//        try {
+
+        System.out.println("====================================");
+        Device device = getDeviceDAOImpl().validateDevice();
+        System.out.println("====================================");
+        if (device != null) {
+
+            this.userName = device.getUsername();
+            this.password = device.getPassword();
+            this.deviceName = device.getDeviceName();
+            this.deviceIP = device.getDeviceIP();
+            this.deviceKey = device.getDeviceKey();
+
+            ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
+            String msg = "device name = " + device.getDeviceName() + "is log in";
+            HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);
+            session.setAttribute("device", session);
+
+            logger.log(Level.INFO, msg);
+            return ("pages/DeviceInfo.xhtml");
+        } else {
+            return "login.xhtml";
+        }
+//        } catch (Exception ex) {
+//            FacesMessage message = new FacesMessage(" Login error is = " + ex.getMessage());
+//            FacesContext.getCurrentInstance().addMessage("loginButton", message);
+//            //loginButton
+//            ex.printStackTrace();
+//            logger.log(Level.ERROR, ex.getMessage());
+//            return "login.xhtml";
+//        }
 
     }
 
-    public void setDeviceDAO(DeviceDAOImpl DeviceDAO) {
-        deviceDAO = DeviceDAO;
-    }
 
-    public DeviceDAOImpl getDeviceDAO() {
-        return deviceDAO;
-    }
 }

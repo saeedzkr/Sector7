@@ -10,7 +10,9 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
 
 <h:head>
     <title>Sector7</title>
@@ -19,17 +21,31 @@
 <h:body style="vertical-align: middle;text-align: center;">
     <h:form>
         <h3>Welcome to SECTOR7 project</h3>
-        <h:outputText value="Username" />
-        <h:inputText id="username" value="#{loginBean.userName}"></h:inputText>
-        <h:message for="username"></h:message>
-        <br /><br />
+        <h:outputText value="Username"/>
+        <h:inputText id="username" required="true" requiredMessage="username is ncessary !!!!"
+                     value="#{loginDeviceBean.userName}">
+            <f:validateLength minimum="1"/>
+        </h:inputText>
+        <h:message style="color:red" for="username" id="error1"/>
+        <br/><br/>
 
-        <h:outputText value="Password" />
-        <h:inputSecret id="password" value="#{loginBean.password}"></h:inputSecret>
-            <h:message for="password"></h:message>
-        <br /><br />
+        <h:outputText value="Password"/>
+        <h:inputSecret id="password" required="true" requiredMessage="Password is necessary !!!!"
+                       value="#{loginDeviceBean.password}">
+            <f:validateLength minimum="1"/>
+        </h:inputSecret>
+        <h:message style="color:red" for="password" id="error2"/>
+        <br/><br/>
 
-        <h:commandButton action="#{loginBean.login}" value="Login"></h:commandButton>
+        <h:commandButton id="loginButton" action="#{loginDeviceBean.loginDevice}" value="Login"></h:commandButton>
+        <h:message style="color:red" for="loginButton" id="error"/>
+
+        <div style="text-align: center;">
+            <p:captcha theme="white" language="En" publicKey="6LdmPhQTAAAAAJNpnNwy7FBMY22f-9bpgGhgrRv4"/>
+
+        </div>
+
+        <!--<p:commandButton value="Check" actionListener="#{log}" ajax="false" icon="ui-icon-check"/>-->
     </h:form>
 </h:body>
 

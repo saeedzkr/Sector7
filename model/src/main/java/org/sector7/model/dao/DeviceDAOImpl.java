@@ -4,25 +4,39 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.Priority;
 import org.sector7.model.entity.Device;
+import org.springframework.stereotype.Repository;
+
+import javax.transaction.Transactional;
 
 /**
  * Created by sector7 on 12/29/15.
  */
+
+@Repository
+@Transactional
 public class DeviceDAOImpl implements DeviceDAO {
 
+    final Logger logger = Logger.getLogger("callLogger");
 
-    Logger logger = Logger.getLogger("callLogger");
+    public DeviceDAOImpl() {
+
+        logger.log(Level.INFO , "logger has been initialized");
+        System.out.println("------------------------------" + this.getClass().getName());
+    }
+
+
 
     @Override
     public Device validateDevice() {
-        try {
+//        try {
             Device device = new Device();
-
+            System.out.println("------------------------------ 001" );
 
             String values = System.getProperty("org.sector7.security");
+            System.out.println("------------------------------ 002" );
 
             String[] result = values.split(";");
-
+            System.out.println("------------------------------ 003" );
             //dev001;989125763458;admin;123456;192.168.1.9
             device.setDeviceName(result[0]);
             device.setPhoneNumber(result[1]);
@@ -33,9 +47,11 @@ public class DeviceDAOImpl implements DeviceDAO {
             logger.log(Level.INFO, " validate DAO =" + device.toString());
 
             return device;
-        } catch (Exception ex) {
-            return null;
-
-        }
+//        } catch (Exception ex) {
+//
+//            logger.log(Level.ERROR , ex.getStackTrace().toString());
+//            return null;
+//
+//        }
     }
 }
