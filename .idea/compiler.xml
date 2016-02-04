@@ -44,12 +44,20 @@
         <processorPath useClasspath="true" />
         <module name="SERCTOR7-MODEL" />
       </profile>
+      <profile default="false" name="Annotation profile for SERCTOR7-MESSAGING" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="SERCTOR7-MESSAGING" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SECTOR7" target="1.5" />
       <module name="Sector7" target="1.5" />
       <module name="SECTOR7-WEB-Console" target="1.7" />
       <module name="SERCTOR7-JOBS" target="1.7" />
+      <module name="SERCTOR7-MESSAGING" target="1.7" />
       <module name="SERCTOR7-MODEL" target="1.7" />
       <module name="SERCTOR7-Service-Console" target="1.7" />
     </bytecodeTargetLevel>

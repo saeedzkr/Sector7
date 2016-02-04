@@ -33,6 +33,10 @@
           <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.1" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
           <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
+          <element id="archive" name="SERCTOR7-MESSAGING-0.0.1.jar">
+            <element id="module-output" name="SERCTOR7-MESSAGING" />
+          </element>
+          <element id="library" level="project" name="Maven: org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2" />
           <element id="library" level="project" name="Maven: org.primefaces:primefaces:3.3" />
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.1" />
           <element id="library" level="project" name="Maven: com.sun.faces:jsf-api:2.2.10" />
