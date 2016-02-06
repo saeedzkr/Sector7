@@ -19,7 +19,7 @@ public class Publisher {
     private MqttClient _MqttClient;
 
 
-    public static final String BROKER_URL = "tcp://0.0.0.0:1883";
+    public static final String BROKER_URL = "tcp://192.168.1.6:1883";
     public static final String TOPIC_REPORT = "sector7/REPORTMSG";
 
 
