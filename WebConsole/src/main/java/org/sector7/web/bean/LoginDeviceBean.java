@@ -123,8 +123,8 @@ public class LoginDeviceBean implements Serializable {
             this.deviceName = device.getDeviceName();
             this.deviceIP = device.getDeviceIP();
             this.deviceKey = device.getDeviceKey();
-            org.sector7.messaging.publish.Publisher publisher = new Publisher();
-            publisher.send(this.deviceKey , this.userName);
+//            org.sector7.messaging.publish.Publisher publisher = new Publisher();
+//            publisher.send(this.deviceKey , this.userName);
             ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
             String msg = "device name = " + device.getDeviceName() + "is log in";
             HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);

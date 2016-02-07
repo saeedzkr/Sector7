@@ -25,8 +25,10 @@ public class Publisher {
 
     private MqttClient client;
 
+    private static Publisher _Instance;
 
-    public Publisher() {
+
+    private Publisher() {
 
         //We have to generate a unique Client id.
         String clientId = Utils.getMacAddress() + "-pub";
@@ -34,7 +36,10 @@ public class Publisher {
 
         try {
 
+            MqttConnectOptions options = new MqttConnectOptions();
+            options.setCleanSession(false);
             client = new MqttClient(BROKER_URL, clientId);
+            client.connect(options);
 
         } catch (MqttException e) {
             e.printStackTrace();
@@ -42,20 +47,28 @@ public class Publisher {
         }
     }
 
-    private void start(String msg , String reciver) {
+    public static Publisher getInstance() {
+        if (_Instance != null)
+            return _Instance;
+        else
+            _Instance = new Publisher();
+            return _Instance;
+    }
+
+    private void start(String reciver, String msg) {
 
         try {
-            MqttConnectOptions options = new MqttConnectOptions();
-            options.setCleanSession(false);
-            options.setWill(client.getTopic("home/LWT"), "This is Test".getBytes(), 0, false);
 
-            client.connect(options);
+            //options.setWill(client.getTopic("home/LWT"), "This is Test".getBytes(), 0, false);
 
-            final MqttTopic temperatureTopic = client.getTopic(TOPIC_REPORT);
+            String subscriber = TOPIC_REPORT + "/" + reciver;
+            System.out.println(subscriber);
+            final MqttTopic temperatureTopic = client.getTopic(subscriber);
 
             temperatureTopic.publish(new MqttMessage(msg.getBytes()));
 
             System.out.println("Published data. Topic: " + temperatureTopic.getName() + "  Message: " + msg);
+
         } catch (MqttException e) {
             e.printStackTrace();
             System.exit(1);
@@ -65,7 +78,7 @@ public class Publisher {
 
     public void send(String reciver, String msg) {
 
-        start(msg , reciver);
+        start(reciver, msg);
 
     }
 
